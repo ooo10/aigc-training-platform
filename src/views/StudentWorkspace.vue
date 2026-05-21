@@ -124,7 +124,7 @@
 <script setup>
 import { ref, markRaw } from 'vue'
 import { useRouter } from 'vue-router'
-import { Video, Picture, FileText, Music } from '@element-plus/icons-vue'
+import { VideoPlay, Camera, Files, Mic } from '@element-plus/icons-vue'
 
 const router = useRouter()
 const activeMenu = ref('1')
@@ -143,10 +143,10 @@ const assignments = [
 ]
 
 const modules = [
-  { name: '文本生成', description: '使用AI生成文本内容', icon: markRaw(FileText) },
-  { name: '图像生成', description: 'AI图像创作工具', icon: markRaw(Picture) },
-  { name: '视频生成', description: 'AI视频制作工具', icon: markRaw(Video) },
-  { name: '音频生成', description: 'AI语音合成工具', icon: markRaw(Music) }
+  { name: '文本生成', description: '使用AI生成文本内容', icon: markRaw(Files) },
+  { name: '图像生成', description: 'AI图像创作工具', icon: markRaw(Camera) },
+  { name: '视频生成', description: 'AI视频制作工具', icon: markRaw(VideoPlay) },
+  { name: '音频生成', description: 'AI语音合成工具', icon: markRaw(Mic) }
 ]
 
 const viewCourse = (course) => {
